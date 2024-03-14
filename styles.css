@@ -15,9 +15,9 @@
 body {
   background-color: var(--dark-blue);
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 1.12rem;
   color: var(--light-grey);
-  padding: 0 15px;
+  padding: 0 .94rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,14 +26,14 @@ body {
 h1 {
   text-align: center;
   font-size: 2.3rem;
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 
 .input-container {
-  margin: 10px 0;
+  margin: .625rem 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: .625rem;
   justify-content: center;
   align-items: center;
 }
@@ -42,20 +42,20 @@ h1 {
   background-color: var(--orange);
   cursor: pointer;
   border: none;
-  padding: 4px;
+  padding: 0.25rem;
 }
 
 .number-input {
-  height: 25px;
+  height: 1.563rem;
 }
 
 #result {
-  margin: 10px 0;
-  min-width: 200px;
+  margin: 0.625rem 0;
+  min-width: 12.5rem;
   width: fit-content;
-  min-height: 80px;
+  min-height: 5rem;
   word-break: break-word;
-  padding: 15px;
+  padding: 0.938rem;
   border: 5px solid var(--orange);
   font-size: 2rem;
   text-align: center;
@@ -63,12 +63,12 @@ h1 {
 
 #animation-container {
   margin: auto;
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 .animation-frame {
-  margin: 250px auto 0;
-  padding: 15px 10px;
+  margin: 15.625rem auto 0;
+  padding: 0.938rem 0.625rem;
   border: 5px solid var(--orange);
   font-size: 1.2rem;
   text-align: center;
