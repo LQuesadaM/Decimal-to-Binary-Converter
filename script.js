@@ -4,11 +4,9 @@ const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
   // start with base case
-  if (input === 0) {
-    return "0";
+  if (input === 0 || input === 1) {
+    return String(input);
     // used recursive function
-  } else if (input === 1) {
-    return "1";
   } else {
     return decimalToBinary(Math.floor(input / 2)) + (input % 2);
   }
