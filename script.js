@@ -3,10 +3,12 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-  // used recursive funtion
-
-  if (input === 0) {    // start with base case
-    return ""
+  // start with base case
+  if (input === 0) {
+    return "";
+    // used recursive function
+  } else {
+    return decimalToBinary(Math.floor(input / 2)) + (input % 2);
   }
 };
 
