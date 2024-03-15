@@ -32,7 +32,15 @@ const decimalToBinary = (input) => {
 
 // animation frame
 const showAnimation = () => {
-  
+  result.innerText = "Call Stack Animation";
+  animationData.forEach((obj) => {
+    setTimeout(() => {
+      animationContainer.innerHTML += `
+      <p id="${obj.inputVal}" style="margin-top: ${obj.marginTop}px;" class="animation-frame">
+        decimalToBinary(${obj.inputVal})
+      </p>`;
+    }, obj.addElDelay);
+  });
 };
 
 const checkUserInput = () => {
