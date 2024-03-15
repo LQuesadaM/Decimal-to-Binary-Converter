@@ -3,18 +3,11 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const decimalToBinary = (input) => {
-  let binary = "";
+  // used recursive funtion
 
-  if (input === 0) {
-    binary = "0";
+  if (input === 0) {    // start with base case
+    return ""
   }
-
-  while (input > 0) {
-    binary = (input % 2) + binary;
-    input = Math.floor(input / 2);
-  }
-
-  result.innerText = binary;
 };
 
 const checkUserInput = () => {
